@@ -1,0 +1,3 @@
+[submodule "vendor/basenji"]
+	path = vendor/basenji
+	url = https://github.com/calico/basenji
