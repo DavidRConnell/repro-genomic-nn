@@ -1,4 +1,4 @@
-# Reproduce genomic CNN
+# Reproduce genomic CNNs
 
 Attempt to reproduce the results of published neural networks related to genome analysis.
 Many published analyses are difficult to reproduce due to differences in environments that the analyses are run on.

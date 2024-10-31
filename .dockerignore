@@ -1,0 +1,17 @@
+.github/
+docker/
+example/
+.gitignore
+.gitmodules
+flake.*
+LICENSE
+Makefile
+README.md
+vendor/basenji
+!vendor/basenji/basenji/
+!vendor/basenji/setup.py
+!vendor/basenji/environment.yml
+!vendor/basenji/prespecified.yml
+!vendor/basenji/requirements.txt
+!vendor/basenji/LICENSE
+!vendor/basenji/README.md

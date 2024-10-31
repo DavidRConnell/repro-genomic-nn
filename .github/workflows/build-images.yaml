@@ -16,7 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        submodules: true
+        with:
+          submodules: "true"
 
       - name: Log in to registry
         run: >-
@@ -24,9 +25,9 @@ jobs:
             docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: publish devel
-        if: github.reftype == "branch"
+        if: github.ref_type == 'branch'
         run: make _publish
 
       - name: publish tagged
-        if: github.reftype == "tag"
+        if: github.ref_type == 'tag'
         run: TAG=${${{ github.refname }}#v*} make _publish
